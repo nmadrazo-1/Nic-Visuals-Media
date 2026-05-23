@@ -16,7 +16,7 @@ South Florida, USA
 
 ## 🌐 Website
 Live website:  
-https://nmadrazo-1.github.io/Nic-Visuals-Media/#gallery
+https://nmadrazo-1.github.io/Nic-Visuals-Media/
 
 ## 📸 What This Project Is
 This repository contains the code for my personal photography portfolio website built using:
