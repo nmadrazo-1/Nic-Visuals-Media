@@ -13,9 +13,9 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 20px 60px;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.6);
   backdrop-filter: blur(10px);
-  z-index: 100;
+  z-index: 1000;
 }
 
 .logo {
