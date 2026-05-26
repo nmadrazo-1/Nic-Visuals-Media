@@ -8,43 +8,80 @@
 
   <link rel="stylesheet" href="style.css">
 
-  <!-- luxury font -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+  <!-- NAV -->
+  <nav>
+    <div class="logo">Nic Visuals Media</div>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Book</a>
+    </div>
+  </nav>
+
   <!-- HERO -->
-  <section id="home" class="hero">
+  <section class="hero">
     <div class="overlay"></div>
 
     <div class="hero-content">
-      <h1>Nic Visuals Media</h1>
+      <h1>Cinematic Photography</h1>
       <p>Portrait • Lifestyle • Nature</p>
-      <p class="sub">
-        capturing creation through His light ✞
-      </p>
+      <p class="tagline">Visual storytelling inspired by light, creation & purpose ✞</p>
 
-      <a href="#gallery" class="btn">View Gallery</a>
+      <a href="#contact" class="btn">Book a Session</a>
     </div>
   </section>
 
-  <!-- GALLERY -->
-  <section id="gallery" class="gallery-section">
-
+  <!-- WORK PREVIEW -->
+  <section id="work" class="work">
     <h2>Selected Work</h2>
 
-    <div class="gallery">
-
-      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" />
-      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" />
-      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" />
-      <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9" />
-      <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429" />
-      <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1" />
-
+    <div class="grid">
+      <img src="photo1.jpg">
+      <img src="photo2.jpg">
+      <img src="photo3.jpg">
+      <img src="photo4.jpg">
+      <img src="photo5.jpg">
+      <img src="photo6.jpg">
     </div>
+  </section>
 
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <h2>About</h2>
+
+    <p>
+      Nic Visuals Media is a South Florida photography brand focused on cinematic portrait, lifestyle, and nature photography.
+      Every session is designed to feel intentional, natural, and emotionally driven — capturing real moments through light and storytelling.
+    </p>
+
+    <p class="small">
+      Inspired by faith, creation, and the beauty found in everyday life ✞
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Book a Session</h2>
+
+    <form action="https://formspree.io/f/YOUR_ID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+
+      <select name="type">
+        <option>Portrait Session</option>
+        <option>Lifestyle Shoot</option>
+        <option>Nature / Creative</option>
+      </select>
+
+      <textarea name="message" placeholder="Tell me your vision..." required></textarea>
+
+      <button type="submit">Send Inquiry</button>
+    </form>
   </section>
 
   <!-- FOOTER -->
