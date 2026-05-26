@@ -1,31 +1,49 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: #0f0f0f;
+  background: #0b0b0b;
   color: white;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 /* HERO */
 .hero {
   height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-
+  background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  position: relative;
 }
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.5);
+  inset: 0;
+  background: rgba(0,0,0,0.55);
 }
 
 .hero-content {
@@ -39,24 +57,19 @@ h1 {
   margin: 0;
 }
 
-p {
-  font-size: 1.2rem;
-  opacity: 0.85;
-}
-
-.sub {
-  font-size: 1rem;
+.tagline {
+  opacity: 0.8;
   margin-top: 10px;
 }
 
+/* BUTTON */
 .btn {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 25px;
   padding: 12px 25px;
   border: 1px solid white;
   color: white;
   text-decoration: none;
-  transition: 0.3s;
 }
 
 .btn:hover {
@@ -64,37 +77,72 @@ p {
   color: black;
 }
 
-/* GALLERY */
-.gallery-section {
-  padding: 80px 10%;
-  background: #0f0f0f;
+/* SECTIONS */
+section {
+  padding: 100px 10%;
 }
 
-.gallery-section h2 {
+/* WORK */
+.work h2,
+.about h2,
+.contact h2 {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
-.gallery {
+.grid {
   columns: 3;
   column-gap: 15px;
 }
 
-.gallery img {
+.grid img {
   width: 100%;
   margin-bottom: 15px;
   border-radius: 10px;
   transition: 0.3s;
 }
 
-.gallery img:hover {
+.grid img:hover {
   transform: scale(1.02);
+}
+
+/* ABOUT */
+.about p {
+  max-width: 700px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+.small {
+  margin-top: 15px;
+  opacity: 0.6;
+}
+
+/* CONTACT */
+.contact form {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, select, textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  padding: 12px;
+  background: white;
+  border: none;
+  cursor: pointer;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 40px;
-  opacity: 0.6;
+  padding: 50px;
+  opacity: 0.5;
 }
