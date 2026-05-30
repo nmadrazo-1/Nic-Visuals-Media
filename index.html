@@ -1,94 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nic Visuals Media</title>
-
-  <link rel="stylesheet" href="style.css">
-
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- NAV -->
-  <nav>
-    <div class="logo">Nic Visuals Media</div>
-    <div class="nav-links">
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a href="#contact">Book</a>
-    </div>
-  </nav>
-
   <!-- HERO -->
-  <section class="hero">
+  <header class="hero">
     <div class="overlay"></div>
 
     <div class="hero-content">
-      <h1>Cinematic Photography</h1>
-      <p>Portrait • Lifestyle • Nature</p>
-      <p class="tagline">Visual storytelling inspired by light, creation & purpose ✞</p>
+      <h1>Nic Visuals Media</h1>
+      <p class="tagline">Photography rooted in light, purpose, and beauty</p>
+      <span class="subtext">Capturing peace-filled, natural moments through God’s creation.</span>
 
       <a href="#contact" class="btn">Book a Session</a>
     </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <h2>About</h2>
+    <p>
+      Nic Visuals Media was created with a heart for capturing beauty, light, and meaningful moments through photography.
+      Inspired by God’s creation and the beauty found in everyday life, each session is designed to feel peaceful, natural, and intentional.
+      My goal is to help people feel seen, confident, and at peace in front of the camera.
+    </p>
   </section>
 
-  <!-- WORK PREVIEW -->
-  <section id="work" class="work">
-    <h2>Selected Work</h2>
+  <!-- SERVICES -->
+  <section class="section soft">
+    <h2>What I Offer</h2>
 
     <div class="grid">
-      <img src="photo1.jpg">
-      <img src="photo2.jpg">
-      <img src="photo3.jpg">
-      <img src="photo4.jpg">
-      <img src="photo5.jpg">
-      <img src="photo6.jpg">
+      <div class="card">
+        <h3>Portrait Sessions</h3>
+        <p>Natural, light-filled portraits that reflect your personality and peace.</p>
+      </div>
+
+      <div class="card">
+        <h3>Graduation Sessions</h3>
+        <p>Celebrating milestones with joy, gratitude, and timeless imagery.</p>
+      </div>
+
+      <div class="card">
+        <h3>Lifestyle Sessions</h3>
+        <p>Candid storytelling moments in beautiful natural settings.</p>
+      </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="about">
-    <h2>About</h2>
+  <!-- PORTFOLIO -->
+  <section class="section">
+    <h2>Featured Work</h2>
 
-    <p>
-      Nic Visuals Media is a South Florida photography brand focused on cinematic portrait, lifestyle, and nature photography.
-      Every session is designed to feel intentional, natural, and emotionally driven — capturing real moments through light and storytelling.
-    </p>
-
-    <p class="small">
-      Inspired by faith, creation, and the beauty found in everyday life ✞
-    </p>
+    <div class="portfolio">
+      <div class="img-box">Image</div>
+      <div class="img-box">Image</div>
+      <div class="img-box">Image</div>
+      <div class="img-box">Image</div>
+      <div class="img-box">Image</div>
+      <div class="img-box">Image</div>
+    </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <h2>Book a Session</h2>
+  <!-- PROCESS -->
+  <section class="section soft">
+    <h2>How It Works</h2>
 
-    <form action="https://formspree.io/f/YOUR_ID" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
+    <div class="process">
+      <p><strong>1. Inquiry</strong> — Submit your booking form</p>
+      <p><strong>2. Confirmation</strong> — Choose a location + date</p>
+      <p><strong>3. Session</strong> — Relaxed, guided photography experience</p>
+      <p><strong>4. Delivery</strong> — Edited photos in 7–14 days</p>
+    </div>
+  </section>
 
-      <select name="type">
-        <option>Portrait Session</option>
-        <option>Lifestyle Shoot</option>
-        <option>Nature / Creative</option>
-      </select>
+  <!-- FAITH LINE -->
+  <section class="verse">
+    <p>“Let your light shine.” — Matthew 5:16</p>
+  </section>
 
-      <textarea name="message" placeholder="Tell me your vision..." required></textarea>
+  <!-- CTA -->
+  <section class="section cta" id="contact">
+    <h2>Let’s Capture Something Beautiful</h2>
+    <p>Natural, peaceful photography rooted in light and purpose.</p>
 
-      <button type="submit">Send Inquiry</button>
-    </form>
+    <a href="YOUR_GOOGLE_FORM_LINK_HERE" class="btn">Book Your Session</a>
+
+    <div class="contact">
+      <p>nicvisualsmedia@gmail.com</p>
+      <p>@nicvisualsmedia</p>
+    </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2026 Nic Visuals Media • South Florida</p>
+    <p>© 2026 Nic Visuals Media</p>
   </footer>
 
 </body>
-
 </html>
