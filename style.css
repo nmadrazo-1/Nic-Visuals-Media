@@ -1,40 +1,150 @@
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: #0b0b0b;
-  color: white;
-}
-
-/* NAV */
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 60px;
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(10px);
-  z-index: 1000;
-}
-
-.logo {
-  font-family: 'Playfair Display', serif;
-}
-
-.nav-links a {
-  color: white;
-  margin-left: 20px;
-  text-decoration: none;
-  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  color: #3a3a3a;
+  background: #ffffff;
 }
 
 /* HERO */
 .hero {
   height: 100vh;
-  background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover;
+  background: url("your-beach-image.jpg") center/cover no-repeat;
+  position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(1px);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 54px;
+  margin: 0;
+}
+
+.tagline {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.subtext {
+  display: block;
+  margin: 15px 0 25px;
+  font-size: 14px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  background: #f5e9da;
+  color: #3a3a3a;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #e8d7c3;
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.soft {
+  background: #faf7f2;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+/* SERVICES */
+.grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 260px;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+/* PORTFOLIO */
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.img-box {
+  height: 220px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+/* PROCESS */
+.process p {
+  margin: 10px 0;
+}
+
+/* FAITH SECTION */
+.verse {
+  padding: 40px 20px;
+  text-align: center;
+  font-style: italic;
+  background: #f5e9da;
+}
+
+/* CTA */
+.cta {
+  background: #ffffff;
+}
+
+.contact {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #faf7f2;
+  font-size: 14px;
+}  align-items: center;
   justify-content: center;
   text-align: center;
   position: relative;
