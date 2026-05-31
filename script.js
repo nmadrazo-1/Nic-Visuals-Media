@@ -68,3 +68,26 @@ document.querySelectorAll(".gallery img").forEach(img => {
   });
 
 });
+
+// Navbar Blur
+
+window.addEventListener("scroll", () => {
+
+  const nav = document.querySelector("nav");
+
+  if (window.scrollY > 50) {
+
+    nav.style.background = "rgba(255,255,255,0.85)";
+    nav.style.backdropFilter = "blur(12px)";
+    nav.style.boxShadow =
+      "0 2px 15px rgba(0,0,0,0.05)";
+
+  } else {
+
+    nav.style.background = "white";
+    nav.style.backdropFilter = "none";
+    nav.style.boxShadow = "none";
+
+  }
+
+});
