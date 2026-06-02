@@ -88,7 +88,9 @@ nav{
 
 /* SECTIONS */
 section{
-    padding:110px 10%;
+    opacity:1;
+    transform:none;
+    padding:100px 10%;
 }
 
 /* HEADINGS */
@@ -126,7 +128,7 @@ h2{
 }
 
 .about p{
-    max-width:750px;
+    max-width:650px;
     margin:auto;
     text-align:center;
     font-size:1.05rem;
@@ -195,9 +197,13 @@ footer{
 
 /* PRICING (LUXURY CLEAN) */
 .pricing-section{
-    max-width:900px;
-    margin:auto;
-    padding:110px 20px;
+    padding:100px 10%;
+}
+
+.pricing-section > *{
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .pricing-title{
@@ -255,4 +261,7 @@ footer{
 section {
     opacity: 1 !important;
     transform: none !important;
+}
+html{
+    scroll-behavior:smooth;
 }
