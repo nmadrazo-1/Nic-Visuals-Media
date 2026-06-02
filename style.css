@@ -1,159 +1,185 @@
-/* RESET */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-/* BASE */
 body{
     font-family:'Inter', sans-serif;
-    color:#4F5D60;
-    background:#FFFFFF;
-    line-height:1.6;
+    color:#3F4E52;
+    background:#FBFBF9;
+    line-height:1.7;
 }
 
-/* NAVIGATION */
+/* NAV */
 nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 8%;
-    background:white;
+    padding:22px 8%;
+    background:rgba(255,255,255,0.85);
+    backdrop-filter: blur(10px);
     position:sticky;
     top:0;
     z-index:1000;
-    box-shadow:0 2px 10px rgba(0,0,0,.04);
+    border-bottom:1px solid rgba(0,0,0,0.05);
 }
 
 .logo{
     font-family:'Cormorant Garamond', serif;
-    font-size:2rem;
-    font-weight:600;
+    font-size:2.2rem;
+    letter-spacing:1px;
 }
 
 .nav-btn{
     text-decoration:none;
-    background:#87C6D8;
+    background:#A7D3E0;
     color:white;
-    padding:12px 24px;
+    padding:12px 26px;
     border-radius:50px;
+    transition:0.3s ease;
+}
+
+.nav-btn:hover{
+    transform:translateY(-2px);
+    background:#92c6d6;
 }
 
 /* HERO */
 .hero{
-    background:linear-gradient(to bottom, #B9DFF0, #F6F1E9);
+    background:linear-gradient(to bottom, #CFE8F3, #F7F2EA);
     text-align:center;
-    padding:80px 20px;
+    padding:110px 20px;
 }
 
 .hero-logo{
-    width:min(500px, 90%);
-    margin-bottom:40px;
+    width:min(420px, 85%);
+    margin-bottom:35px;
+    border-radius:18px;
 }
 
 .hero h1{
     font-family:'Cormorant Garamond', serif;
-    font-size:4rem;
-    margin-bottom:20px;
+    font-size:4.5rem;
+    font-weight:500;
+    letter-spacing:1px;
+    margin-bottom:18px;
 }
 
 .hero p{
     max-width:650px;
     margin:auto;
+    font-size:1.1rem;
+    color:#5A6A6F;
     margin-bottom:35px;
 }
 
 /* BUTTON */
 .cta{
     display:inline-block;
-    background:#87C6D8;
+    background:#A7D3E0;
     color:white;
     text-decoration:none;
-    padding:15px 30px;
+    padding:16px 34px;
     border-radius:50px;
+    letter-spacing:0.5px;
+    transition:0.3s ease;
+}
+
+.cta:hover{
+    transform:translateY(-2px);
+    background:#92c6d6;
 }
 
 /* SECTIONS */
 section{
-    padding:100px 10%;
+    padding:110px 10%;
 }
 
 /* HEADINGS */
 h2{
     text-align:center;
     font-family:'Cormorant Garamond', serif;
-    font-size:3rem;
-    margin-bottom:40px;
+    font-size:3.2rem;
+    font-weight:500;
+    margin-bottom:50px;
+    color:#3F4E52;
 }
 
 /* PORTFOLIO */
-.portfolio{
-    background:white;
-}
-
 .gallery{
     display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
-    gap:20px;
+    grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+    gap:18px;
 }
 
 .gallery img{
     width:100%;
     aspect-ratio:1/1;
     object-fit:cover;
-    border-radius:18px;
-    display:block;
+    border-radius:22px;
+    transition:0.4s ease;
+}
+
+.gallery img:hover{
+    transform:scale(1.02);
 }
 
 /* ABOUT */
 .about{
-    background:#F6F1E9;
+    background:#F7F2EA;
 }
 
 .about p{
-    max-width:800px;
+    max-width:750px;
     margin:auto;
     text-align:center;
+    font-size:1.05rem;
+    color:#5A6A6F;
 }
 
 /* SERVICES */
-.services{
-    background:white;
-}
-
 .cards{
     display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
-    gap:25px;
+    grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+    gap:22px;
 }
 
 .card{
-    background:#F8FAFB;
-    padding:30px;
-    border-radius:20px;
+    background:white;
+    padding:34px;
+    border-radius:22px;
     text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,.05);
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+    transition:0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-5px);
 }
 
 .card h3{
-    margin-bottom:15px;
+    margin-bottom:12px;
+    font-family:'Cormorant Garamond', serif;
 }
 
 /* VERSE */
 .verse{
-    background:#D9F0EC;
+    background:#D9EEF0;
     text-align:center;
 }
 
 .verse p{
     font-family:'Cormorant Garamond', serif;
-    font-size:2rem;
+    font-size:2.2rem;
+    font-style:italic;
 }
 
 .verse span{
     display:block;
     margin-top:10px;
+    color:#5A6A6F;
 }
 
 /* CONTACT */
@@ -161,85 +187,68 @@ h2{
     text-align:center;
 }
 
-.contact p{
-    margin-bottom:25px;
-}
-
 .contact-info{
-    margin-top:30px;
-    font-weight:500;
+    margin-top:25px;
+    color:#5A6A6F;
 }
 
 /* FOOTER */
 footer{
-    background:#F6F1E9;
+    background:#F7F2EA;
     text-align:center;
-    padding:30px;
+    padding:35px;
 }
 
-/* CTA */
-.cta:hover{
-    opacity:0.9;
-}
-
-/* ========================= */
-/* PRICING SECTION (FIXED)   */
-/* ========================= */
-
+/* PRICING (LUXURY CLEAN) */
 .pricing-section{
-    max-width:800px;
+    max-width:900px;
     margin:auto;
-    padding:100px 20px;
-    color:#4F5D60;
+    padding:110px 20px;
 }
 
 .pricing-title{
     text-align:center;
     font-family:'Cormorant Garamond', serif;
-    font-size:3rem;
+    font-size:3.4rem;
     margin-bottom:10px;
 }
 
 .pricing-subtitle{
     text-align:center;
-    margin-bottom:40px;
-    color:#6b7c80;
+    color:#5A6A6F;
+    margin-bottom:50px;
 }
 
 .pricing-card{
-    background:#ffffff;
-    border:1px solid #e6e6e6;
-    border-radius:18px;
-    padding:25px;
+    background:white;
+    border-radius:22px;
+    padding:30px;
     margin-bottom:18px;
-    box-shadow:0 5px 15px rgba(0,0,0,.04);
-    transition:all .2s ease;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+    transition:0.3s ease;
 }
 
 .pricing-card:hover{
-    transform:translateY(-3px);
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transform:translateY(-4px);
 }
 
 .pricing-card h2{
-    font-size:1.3rem;
-    margin-bottom:10px;
     text-align:left;
-    font-family:'Cormorant Garamond', serif;
+    font-size:1.4rem;
+    margin-bottom:10px;
 }
 
 .pricing-notes{
     margin-top:30px;
-    padding:18px;
-    background:#F6F1E9;
-    border-radius:14px;
-    font-size:0.95rem;
+    background:#F7F2EA;
+    padding:22px;
+    border-radius:18px;
 }
 
-/* ANIMATION (CLEANED) */
+/* ANIMATION CLEAN */
 section{
     opacity:0;
-    transform:translateY(30px);
+    transform:translateY(25px);
     transition:all 0.8s ease;
 }
 
@@ -252,14 +261,10 @@ section.show{
 @media(max-width:768px){
 
     .hero h1{
-        font-size:2.5rem;
-    }
-
-    .logo{
-        font-size:1.5rem;
+        font-size:2.8rem;
     }
 
     h2{
-        font-size:2.2rem;
+        font-size:2.4rem;
     }
 }
