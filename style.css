@@ -41,10 +41,7 @@ nav{
     transition:0.3s ease;
 }
 
-.nav-btn:hover{
-    transform:translateY(-2px);
-    background:#92c6d6;
-}
+
 
 /* HERO */
 .hero{
@@ -87,9 +84,6 @@ nav{
     transition:0.3s ease;
 }
 
-.cta:hover{
-    transform:translateY(-2px);
-    background:#92c6d6;
 }
 
 /* SECTIONS */
@@ -245,17 +239,6 @@ footer{
     border-radius:18px;
 }
 
-/* ANIMATION CLEAN */
-section{
-    opacity:0;
-    transform:translateY(25px);
-    transition:all 0.8s ease;
-}
-
-section.show{
-    opacity:1;
-    transform:translateY(0);
-}
 
 /* MOBILE */
 @media(max-width:768px){
