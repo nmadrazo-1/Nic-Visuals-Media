@@ -3,27 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nic Visuals Media</title>
+    <title>Nic Visuals Media — South Florida Photography</title>
 
     <link rel="stylesheet" href="style.css">
 
     <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+<!-- SKIP LINK for keyboard users -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
 <!-- NAV -->
-<nav>
-    <div class="logo">Nic Visuals Media</div>
+<nav aria-label="Main navigation">
+    <div class="logo" aria-label="Nic Visuals Media home">Nic Visuals Media</div>
 
     <a href="#contact" class="nav-btn">Book Now</a>
 </nav>
 
 <!-- HERO -->
-<header class="hero">
+<header class="hero" id="main-content">
 
-    <img src="3.jpg" alt="Nic Visuals Media" class="hero-logo">
+    <img src="3.jpg" alt="Nic Visuals Media logo" class="hero-logo">
 
     <h1>South Florida Photography</h1>
 
@@ -35,6 +38,232 @@
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5CIGilyGLDNSP616LcJpbpBe69lFm9W3IN0Bogs8YtKE65A/viewform?usp=header"
        class="cta"
        target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Book a photography session (opens in new tab)">
+       Book a Session
+    </a>
+
+</header>
+
+<!-- PORTFOLIO -->
+<section class="portfolio" aria-labelledby="portfolio-heading">
+
+    <h2 id="portfolio-heading">Featured Work</h2>
+
+    <div class="gallery" role="list">
+        <figure role="listitem">
+            <img src="IMG_0029.jpg" alt="Portrait photography sample by Nic Visuals Media">
+        </figure>
+        <figure role="listitem">
+            <img src="IMG_8430.jpg" alt="Portrait photography sample by Nic Visuals Media">
+        </figure>
+        <figure role="listitem">
+            <img src="IMG_0094.JPG" alt="Portrait photography sample by Nic Visuals Media">
+        </figure>
+        <figure role="listitem">
+            <img src="IMG_8432.jpg" alt="Portrait photography sample by Nic Visuals Media">
+        </figure>
+        <figure role="listitem">
+            <img src="IMG_8434.jpg" alt="Portrait photography sample by Nic Visuals Media">
+        </figure>
+        <figure role="listitem">
+            <img src="IMG_8435.jpg" alt="Portrait photography sample by Nic Visuals Media">
+        </figure>
+        <figure role="listitem">
+            <img src="IMG_8436.jpg" alt="Portrait photography sample by Nic Visuals Media">
+        </figure>
+        <figure role="listitem">
+            <img src="IMG_4100.HEIC" alt="Portrait photography sample by Nic Visuals Media">
+        </figure>
+        <figure role="listitem">
+            <img src="IMG_4533.HEIC" alt="Portrait photography sample by Nic Visuals Media">
+        </figure>
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="about" aria-labelledby="about-heading">
+
+    <div class="about-inner">
+        <img src="IMG_8480 3.jpeg" alt="Nic, photographer at Nic Visuals Media" class="about-photo">
+
+        <div class="about-text">
+            <h2 id="about-heading">About</h2>
+            <p>
+                Nic Visuals Media was created with a passion for capturing beauty,
+                connection, and meaningful moments through photography.
+                Inspired by coastal light, natural tones, and authentic storytelling,
+                every session is designed to feel calm, effortless, and real.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<!-- PRICING -->
+<section class="pricing-section" aria-labelledby="pricing-heading">
+
+    <h2 id="pricing-heading" class="pricing-title">Pricing</h2>
+
+    <p class="pricing-subtitle">
+        Simple, transparent packages designed for timeless portraits.
+    </p>
+
+    <div class="pricing-cards">
+
+        <article class="pricing-card" aria-label="Mini Session package">
+            <div class="pricing-card-header">
+                <span class="pricing-icon" aria-hidden="true">✦</span>
+                <h3>Mini Session</h3>
+                <p class="price">$85</p>
+            </div>
+            <ul class="pricing-list">
+                <li>20–30 minutes</li>
+                <li>1 location</li>
+                <li>10 edited photos</li>
+            </ul>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5CIGilyGLDNSP616LcJpbpBe69lFm9W3IN0Bogs8YtKE65A/viewform?usp=header"
+               class="pricing-btn"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Book Mini Session for $85 (opens in new tab)">
+               Book This
+            </a>
+        </article>
+
+        <article class="pricing-card pricing-card--featured" aria-label="Standard Session package, most popular">
+            <span class="pricing-badge">Most Popular</span>
+            <div class="pricing-card-header">
+                <span class="pricing-icon" aria-hidden="true">✦</span>
+                <h3>Standard Session</h3>
+                <p class="price">$150</p>
+            </div>
+            <ul class="pricing-list">
+                <li>45–60 minutes</li>
+                <li>1 location</li>
+                <li>20–30 edited photos</li>
+            </ul>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5CIGilyGLDNSP616LcJpbpBe69lFm9W3IN0Bogs8YtKE65A/viewform?usp=header"
+               class="pricing-btn"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Book Standard Session for $150 (opens in new tab)">
+               Book This
+            </a>
+        </article>
+
+        <article class="pricing-card" aria-label="Premium Session package">
+            <div class="pricing-card-header">
+                <span class="pricing-icon" aria-hidden="true">✦</span>
+                <h3>Premium Session</h3>
+                <p class="price">$250</p>
+            </div>
+            <ul class="pricing-list">
+                <li>1.5–2 hours</li>
+                <li>1 location</li>
+                <li>40+ edited photos</li>
+            </ul>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5CIGilyGLDNSP616LcJpbpBe69lFm9W3IN0Bogs8YtKE65A/viewform?usp=header"
+               class="pricing-btn"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Book Premium Session for $250 (opens in new tab)">
+               Book This
+            </a>
+        </article>
+
+    </div>
+
+    <div class="pricing-notes" role="note">
+        <p><strong>Deposit:</strong> $25–$50 required to secure your date</p>
+        <p><strong>Turnaround:</strong> 1–2 weeks delivery</p>
+        <p><strong>Location:</strong> Select SoFlo areas — see booking form for details</p>
+    </div>
+
+</section>
+
+<!-- SERVICES -->
+<section class="services" aria-labelledby="services-heading">
+
+    <h2 id="services-heading">Services</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <span class="card-icon" aria-hidden="true">🌊</span>
+            <h3>Portrait Sessions</h3>
+            <p>Natural portraits that reflect your personality and story.</p>
+        </div>
+
+        <div class="card">
+            <span class="card-icon" aria-hidden="true">🎓</span>
+            <h3>Graduation Sessions</h3>
+            <p>Timeless milestone photography for your achievements.</p>
+        </div>
+
+        <div class="card">
+            <span class="card-icon" aria-hidden="true">☀️</span>
+            <h3>Lifestyle Sessions</h3>
+            <p>Soft, candid storytelling in natural light settings.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- VERSE -->
+<section class="verse" aria-label="Inspirational quote">
+
+    <blockquote>
+        <p>
+            "Commit your work to the Lord, and your plans will be established."
+        </p>
+        <footer><cite>Proverbs 16:3</cite></footer>
+    </blockquote>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact" aria-labelledby="contact-heading">
+
+    <h2 id="contact-heading">Let's Create Something Beautiful</h2>
+
+    <p>Ready to book your session? I'd love to work with you.</p>
+
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5CIGilyGLDNSP616LcJpbpBe69lFm9W3IN0Bogs8YtKE65A/viewform?usp=header"
+       class="cta"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Book your photography session (opens in new tab)">
+       Book Now
+    </a>
+
+    <div class="contact-info">
+        <p>
+            <a href="mailto:nicvisualsmedia@gmail.com" aria-label="Email Nic Visuals Media">
+                nicvisualsmedia@gmail.com
+            </a>
+        </p>
+        <p>
+            <a href="https://instagram.com/nicvisualsmedia" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               aria-label="Follow Nic Visuals Media on Instagram (opens in new tab)">
+               @nicvisualsmedia on Instagram
+            </a>
+        </p>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Nic Visuals Media. All rights reserved.</p>
+</footer>
+
+</body>
+</html>       target="_blank"
        rel="noopener noreferrer">
        Book a Session
     </a>
